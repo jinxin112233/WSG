@@ -1,6 +1,17 @@
 ##Dependencies
 #GATK v.4.1.3.0; VCFtools v.0.1.16; PLINK v.1.9
 
+samtools index 01_sort.mdup.bam
+gatk --java-options "-Xmx4g -Djava.io.tmpdir=./tmp" MarkDuplicates -I 01_sort.bam -O 01_sort.mdup.bam -CREATE_INDEX=true -REMOVE_DUPLICATES=true -M 01.dups.txt
+gatk --java-options "-Xmx4g -Djava.io.tmpdir=./tmp" HaplotypeCaller -R genome.fasta -ERC GVCF -I 01_sort.mdup.bam -O 01.gvcf
+samtools index 02_sort.mdup.bam
+gatk --java-options "-Xmx4g -Djava.io.tmpdir=./tmp" MarkDuplicates -I 02_sort.bam -O 02_sort.mdup.bam -CREATE_INDEX=true -REMOVE_DUPLICATES=true -M 02.dups.txt
+gatk --java-options "-Xmx4g -Djava.io.tmpdir=./tmp" HaplotypeCaller -R genome.fasta -ERC GVCF -I 02_sort.mdup.bam -O 02.gvcf
+samtools index 03_sort.mdup.bam
+gatk --java-options "-Xmx4g -Djava.io.tmpdir=./tmp" MarkDuplicates -I 03_sort.bam -O 03_sort.mdup.bam -CREATE_INDEX=true -REMOVE_DUPLICATES=true -M 03.dups.txt
+gatk --java-options "-Xmx4g -Djava.io.tmpdir=./tmp" HaplotypeCaller -R genome.fasta -ERC GVCF -I 03_sort.mdup.bam -O 03.gvcf
+...
+
 gatk --java-options "-Xmx4g -Djava.io.tmpdir=./tmp" CombineGVCFs -R genome.fasta --variant 01.gvcf --variant 02.gvcf --variant 03.gvcf -O all.gvcf
 gatk --java-options "-Xmx4g -Djava.io.tmpdir=./tmp" GenotypeGVCFs -R genome.fasta --variant all.gvcf -O all.vcf
 gatk --java-options "-Xmx4g -Djava.io.tmpdir=./tmp" SelectVariants -R genome.fasta -V all.vcf --select-type SNP -O all.snp.vcf

@@ -8,7 +8,7 @@ Bash command for wild strawberry genome (WSG)
 
 2) All the genome assemblies reported in this paper have been deposited in the GWH (https://ngdc.cncb.ac.cn/gwh), and the accession number is GWHDEDQ00000000 (F. chiloensis), GWHDEDR00000000 (F. virginiana) and GWHDEDN00000000 (F. nipponica).
 
-3) All the genome assembly and annotation files are also uploaded on the Genome Database for Rosaceae (https://www.rosaceae.org/). Please Note: (Staff expects to be able to make it available this week | OK~ Today is June 21, 2023).
+3) All the genome assembly and annotation files are also available on the GDR (https://www.rosaceae.org/). The download pages are below: F. chiloensis (https://www.rosaceae.org/Analysis/16216791); F. virginiana (https://www.rosaceae.org/Analysis/16216793); F. nipponica (https://www.rosaceae.org/Analysis/16216792).
 
 
 

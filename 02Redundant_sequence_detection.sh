@@ -8,7 +8,6 @@ split_fa done.fasta > split.fa
 minimap2 -I6G -xasm5 -DP split.fa split.fa -t 12 > ctg-aln.paf
 purge_dups -2 -T cutoffs -c PB.base.cov ctg-aln.paf > dups.bed
 get_seqs dups.bed genome.fa
-python3 hist_plot.py -c cutoffs PB.stat out.png
 
 ##Reference
 #Li, H. Minimap2: pairwise alignment for nucleotide sequences. Bioinformatics 34, 3094–3100 (2018).

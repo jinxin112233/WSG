@@ -1,5 +1,5 @@
 # WSG
-Bash command for wild strawberry genome (WSG)
+Bash command and data links for wild strawberry genome (WSG)
 
 
 
@@ -10,7 +10,14 @@ Bash command for wild strawberry genome (WSG)
 
 3) All the genome assembly and annotation files are also available on the GDR (https://www.rosaceae.org/). The download pages are below: F. chiloensis (https://www.rosaceae.org/Analysis/16216791); F. virginiana (https://www.rosaceae.org/Analysis/16216793); F. nipponica (https://www.rosaceae.org/Analysis/16216792).
 
+4) All the organelle genome assembly and annotation files (provide .gb format) are available on the this page. The download link are below: https://github.com/jinxin112233/WSG/blob/main/organelle_genome.zip.
+
+
+
+# Contact
+Any comments and questions are welcome.
+
 
 
 # Citations
-Haplotype-resolved genomes of wild octoploid progenitors illuminate genomic diversifications from wild relatives to cultivated strawberry (Accepted by Nature plants).
+Haplotype-resolved genomes of wild octoploid progenitors illuminate genomic diversifications from wild relatives to cultivated strawberry (Published by Nature plants) (https://doi.org/10.1038/s41477-023-01473-2).

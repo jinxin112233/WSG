@@ -1,5 +1,5 @@
 # WSG
-Bash command and data links for wild strawberry genome (WSG)
+Bash command and data (or links) for wild strawberry genome (WSG)
 
 
 
